@@ -1,0 +1,26 @@
+function Game(){
+	this.ground_texture=PIXI.Texture.fromImage("rsz_42_55343e49ff327ab009114ae0b63eab3f.png");
+	this.ground=[][];
+
+	this.Set_ground=function(){
+		for(var i=0,position_x=10;i<40;++i,position_x+=10)
+		{
+			ground.push();
+			for(var j=0,position_y=10;j<40;++j,position_y+=10)
+			{
+				ground_sprite=new PIXI.Sprite(this.ground_texture);
+				ground_sprite.anchor.x=0.5;
+				ground_sprite.anchor.y=0.5;
+				ground_sprite.pisition.x=poxition_x;
+				ground_sprite.pisition.y=poxition_y;
+				ground[i].push(ground_sprite);		
+			}
+		}
+	}
+	
+	this.Stage_add=function(){
+		for(var i=0;i<this.ground.length;++i)
+			for(var j=0;j<this.ground[i].length;++j)
+				game_stage.addChild(this.ground[i][j].ground_sprite);
+	}
+};

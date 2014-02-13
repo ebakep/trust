@@ -9,12 +9,13 @@
 			background-color: #000000;
 		}
 	</style>
-	<script src="pixi.js"></script>
+	<script src="pixi.dev.js"></script>
 
 </head>
 <body>
 	<script src="buttons.js"></script>
 	<script src="menu.js"></script>
+	<script src="main.js"></script>
 
 	</body>
 </html>

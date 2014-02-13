@@ -10,5 +10,5 @@
 	    requestAnimFrame( animate );
 
 	    //console.log(stage.getBounds().width);
-	    renderer.render(stage);
+	    renderer.render(current_stage);
 	}
